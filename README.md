@@ -19,8 +19,8 @@ Questo progetto è una semplice applicazione web basata su **Java** utilizzando 
    - Utilizzando il framework **Jersey**, è stata creata un'API REST disponibile all'endpoint `/api/test`.
    - L'API restituisce un semplice messaggio di testo: `"Ciao!"`.
 
-4. **Configurazione del server Tomcat**
-   - Il progetto è stato eseguito in un server **Tomcat** tramite Maven, utilizzando il plugin `tomcat7-maven-plugin`.
+4. **Configurazione del server Jetty**
+   - Il progetto è stato eseguito in un server **Jetty** tramite Maven, utilizzando il plugin `jetty-maven-plugin`.
    - Il server è stato configurato per rispondere su `http://localhost:8080/HelloWeb`.
 
 ## Componenti Utilizzati
@@ -30,7 +30,7 @@ Questo progetto è una semplice applicazione web basata su **Java** utilizzando 
 - Il file `pom.xml` contiene le dipendenze principali per il progetto, tra cui:
   - **Jersey** per la creazione dell'API REST.
   - **JSP** per la gestione delle pagine web dinamiche.
-  - **Tomcat** come server per eseguire l'applicazione web.
+  - **Jetty** come server per eseguire l'applicazione web.
 
 ### **JSP (Java Server Pages)**
 - **JSP** è stato utilizzato per creare le pagine dinamiche, come `index.jsp` e `author.jsp`.
@@ -40,6 +40,6 @@ Questo progetto è una semplice applicazione web basata su **Java** utilizzando 
 ### **Jersey**
 - **Jersey** è il framework utilizzato per creare l'API REST.
 
-### **Tomcat**
-- **Apache Tomcat** è stato utilizzato come server per eseguire il progetto web.
-- Il progetto è stato configurato per girare su Tomcat utilizzando il plugin Maven `tomcat7-maven-plugin`.
+### **Jetty**
+- **Jetty** è stato utilizzato come server per eseguire il progetto web.
+- Il progetto è stato configurato per girare su Jetty utilizzando il plugin Maven `jetty-maven-plugin`.
